@@ -13,7 +13,6 @@
 
 body {
     background-color: #000;
-    width: 100vw;
 }
 
 header {
@@ -23,6 +22,8 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--green);
+    
+    min-width: 57rem;
 }
 
 h1 {
@@ -41,7 +42,7 @@ main {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 33rem) 40rem;
     gap: 3rem 2rem; 
-    padding: 4rem 10rem;
+    padding: 4rem 1rem;
     margin: auto;
 }
 
@@ -85,7 +86,9 @@ p, button {
 footer {
     background-color: #333333;
     height: 8rem;
-    padding: 3rem;
+    padding: 3rem 1rem;
+
+    min-width: 55rem;
 }
 
 .footer-content {
@@ -98,8 +101,6 @@ footer {
         margin-bottom: 1rem;
     }
 }
-
-
 
 .socials {
     display: grid;
