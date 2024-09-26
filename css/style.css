@@ -1,4 +1,7 @@
-/*Gets the job done och använder mycket grid, men not very responsiv... går sönder lätt in other words*/
+/* main{width: 55rem;} => main {max-width:55rem;} 
+gjorde susen för responsivitet.
+Men skulle inte skada att lägga till en media query för när 
+fönster-/skärmbredden går under 600px*/
 
 :root {
     font-family: Arial, Helvetica, sans-serif;
@@ -22,8 +25,6 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--green);
-    
-    min-width: 57rem;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h1 {
 }
 
 main {
-    width: 55rem;
+    max-width: 55rem;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 33rem) 40rem;
@@ -62,7 +63,7 @@ p, button {
         border: none;
         border-radius: 0.3rem;
         height: 2rem;
-        padding: 0.5rem 2rem;
+        padding: 0.5rem;
         color: #ffffff;
         font-weight: 700;
     }
@@ -87,8 +88,6 @@ footer {
     background-color: #333333;
     height: 8rem;
     padding: 3rem 1rem;
-
-    min-width: 55rem;
 }
 
 .footer-content {
@@ -119,14 +118,16 @@ footer {
 
 li {
     list-style: none;
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
-a:hover {
-    text-decoration: underline;
-}
